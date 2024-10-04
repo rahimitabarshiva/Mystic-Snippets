@@ -4,7 +4,7 @@ A sleek and modern gallery showcasing short quotes and insights with dynamic hov
 
 
 
-- [Demo Project]()
+- [Demo Project](https://rahimitabarshiva.github.io/Mystic-Snippets/)
 
 - Developed by Shiva Rahimitabar
 
