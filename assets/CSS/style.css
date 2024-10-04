@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    height: auto;
+    width: 100%;
+
+}
+
+.Shiva1 {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid pink; */
+    background-color: rgb(7, 7, 7);
+
+    >h1 {
+        color: rgb(251, 250, 250);
+        padding: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+/* /////////////////////This is where the uppest part ends//////////////////////////// */
+.mother {
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    >a {
+        &:hover {
+            >.R {
+                opacity: 1;
+                left: 55%;
+            }
+        }
+
+        >.R {
+            /* border: 1px solid greenyellow; */
+            width: 150px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            position: absolute;
+            bottom: 10px;
+            left: 45%;
+            z-index: 1;
+            opacity: 0;
+            color: rgb(255, 255, 255);
+            transition: all 2s;
+        }
+
+        >.line {
+            width: 90%;
+            height: 2px;
+            border: 1px solid white;
+            position: absolute;
+            bottom: 42px;
+            left: 15px;
+            z-index: 1;
+        }
+
+        &:hover {
+            >.blur {
+                height: 50%;
+            }
+        }
+
+        &:hover {
+            >.blur {
+                >.paragraph {
+                    >p {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        >.blur {
+            >.paragraph {
+
+                >p {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    color: white;
+                    position: absolute;
+                    top: 40px;
+                    left: 15px;
+                    font-size: 15px;
+                    text-align: justify;
+                    padding: 7px;
+                    opacity: 0;
+                    transition: all 0.7s;
+
+                }
+            }
+
+            >.name {
+                width: 90%;
+                height: 30%;
+                /* border: 1px solid blue; */
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                >h3 {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    color: rgb(245, 245, 245);
+                    padding: 2px;
+                }
+            }
+
+            transition: all 1s;
+            backdrop-filter: blur(7px);
+
+            width: 100%;
+            height: 25%;
+            /* border: 1px solid pink; */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid rgb(6, 33, 16); */
+        width: 20%;
+        height: 80%;
+        margin-right: 22px;
+        position: relative;
+
+        >figure {
+            /* border: 1px solid maroon; */
+            width: 100%;
+            height: 100%;
+            margin-right: 22px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            >img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
